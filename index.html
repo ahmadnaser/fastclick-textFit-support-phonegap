@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+
+<body>
+
+    <div id="DEMO">
+           <label for="inputPlayerName">Your Name:</label>
+            <input id="inputPlayerName" type="text" />
+			<button id="btnPlay" class="btn">Play</button>
+			<p id = "text-container"></p>
+    </div>
+
+
+
+
+
+    <!-- JavaScript Libraries -->
+
+    <!-- jQuery! -->
+    <script src="libs/jquery-2.0.2.min.js"></script>
+
+    <!-- TextFit resizes text to fill a container.
+        It's used so the titles and game words fit properly on any size screen.
+        https://github.com/STRML/textFit   -->
+    <script src="libs/textFit.min.js"></script>
+
+    <!-- FastClick is used to eliminate the 300ms delay when clicking items on a mobile device
+        https://github.com/ftlabs/fastclick -->
+    <script src="libs/fastclick.js"></script>
+
+
+	<script>
+	$(document).ready(function(){
+	
+
+
+var text="In this course you are going to design,develop and publish a complete game with 24 level and different stages with a complete story board using Unity3D UI KIT,the name of this game is'Flaty Box'.NOTE:MORE THAN 300$ ASSETS AND RESOURCES COMES WITH THIS COURSE!.This course is unique in its content and the first in its kind;It’s a complete project-based process to build a complete 2D game using Unity3D from A to Z.We start building the game from the ground up with a clear step by step lessons without jumping.We cover everything related to the design and development for this game starting from the design in Photoshop and choosing color palette then moving to development,configuration and integration with the professional UI KIT tools with all different components and screens and dialogs and testing of the game using Unity3D in order to let you develop a professional game with attractive user interface not in weeks or months but within a matter of few hours.We guide you in details how to design the listing and publish the game on Google Play Store and on Unity Asset Store which is one of the hottest markets on the web.The Following features are supported in this game:Supports PC,Mac,Linux,iOS and Android.Responsive UI.Beautiful graphics&Sound Effects!Includes Scrollable Grid for stages and levels.Player references(Save,Load,Reset)on local files.Game Storyboard UI KIT will make you forget the UI part when you are creating 2D/3D game.It's using the last Unity features like Sprites,Animation with complete storyboard for your game with all required screens and dialogues.Unity is on the top of the develop-once distribute-many platforms and it is really an awesome one-stop-shop platform and game engine for games,that is why we choose it as development platform.";
+		$('#DEMO').find('#text-container').text(text);
+	            // Initialize the fastclick library
+            FastClick.attach(document.body);
+	});
+	</script>
+	
+	
+</body>
+</html>
